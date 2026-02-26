@@ -59,14 +59,16 @@ export default function About() {
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 tracking-tight">
               About{' '}
-              <span className="text-orange-600">Sarvsamajkalyansevatrust</span>
+              <span className="text-orange-600">
+                Sarv Samaj Kalyan Seva Trust
+              </span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Sarvsamajkalyansevatrust is a registered charitable trust working
-              dedicatedly for the welfare of the society. We strongly believe in
-              supporting poor families and bringing smiles to their faces
-              through various initiatives.
+              Sarv Samaj Kalyan Seva Trust is a registered charitable trust
+              working dedicatedly for the welfare of the society. We strongly
+              believe in supporting poor families and bringing smiles to their
+              faces through various initiatives.
             </p>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-10">

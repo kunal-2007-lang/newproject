@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER, // Sending to yourself, or change as needed
-      subject: `New Registration for Sarvsamajkalyansevatrust from ${name}`,
+      subject: `New Registration for Sarv Samaj Kalyan Seva Trust from ${name}`,
       html: `
         <h2>New Registration Received</h2>
         <p><strong>Name:</strong> ${name}</p>

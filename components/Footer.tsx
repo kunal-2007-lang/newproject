@@ -14,12 +14,12 @@ export default function Footer() {
             <span className="w-8 h-8 rounded-full bg-orange-600 flex items-center justify-center text-white text-sm font-bold shadow-lg shadow-orange-600/30">
               S
             </span>
-            Sarvsamajkalyansevatrust
+            Sarv Samaj Kalyan Seva Trust
           </h3>
           <p className="text-sm leading-relaxed mb-4 text-gray-400">
             A registered charitable trust dedicated to social welfare,
             supporting poor families, organizing prize distribution programs,
-            and helping in poor girls' marriages.
+            and helping in poor girls&apos; marriages.
           </p>
           <div className="inline-block bg-gray-800 text-gray-300 font-mono text-xs px-3 py-1.5 rounded border border-gray-700 font-medium tracking-wide">
             Reg No: <span className="text-white">MUZ/8976/2026</span>
@@ -108,7 +108,7 @@ export default function Footer() {
 
       <div className="container mx-auto px-4 mt-12 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 relative z-10">
         <p className="text-gray-500 text-sm font-medium">
-          &copy; 2026 Sarvsamajkalyansevatrust. All Rights Reserved.
+          &copy; 2026 Sarv Samaj Kalyan Seva Trust. All Rights Reserved.
         </p>
         <p className="text-gray-500 text-sm font-medium flex items-center gap-1.5 bg-gray-800/50 px-3 py-1.5 rounded-full">
           Made with{' '}

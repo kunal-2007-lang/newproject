@@ -22,7 +22,7 @@ export default function SocialWelfare() {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-rose-500 to-orange-500 mx-auto rounded-full mb-8"></div>
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed">
-            The heart of Sarvsamajkalyansevatrust lies in its commitment to
+            The heart of Sarv Samaj Kalyan Seva Trust lies in its commitment to
             society. All our programs are organized to support financially weak
             families in arranging the marriages of their daughters.
           </p>

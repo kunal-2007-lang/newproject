@@ -83,7 +83,7 @@ export default function Contact() {
                     Office Address
                   </h4>
                   <p className="text-gray-600 leading-relaxed font-medium">
-                    Sarvsamajkalyansevatrust
+                    Sarv Samaj Kalyan Seva Trust
                     <br />
                     Head Office, Muzaffarnagar
                     <br />

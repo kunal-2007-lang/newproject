@@ -35,7 +35,7 @@ export default function Navbar() {
             S
           </div>
           <span className="font-extrabold text-xl lg:text-2xl text-gray-800 tracking-tight">
-            Sarvsamaj<span className="text-orange-600">kalyan</span>
+            Sarv Samaj<span className="text-orange-600"> Kalyan</span>
           </span>
         </div>
 
