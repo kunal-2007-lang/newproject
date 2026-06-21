@@ -1,5 +1,7 @@
-import React from 'react';
+'use client';
 import { HeartHandshake, ShieldCheck, Users, Gift } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 export default function About() {
   const stats = [
@@ -24,6 +26,11 @@ export default function About() {
       desc: 'Reg No: MUZ/8976/2026.',
     },
   ];
+  const sliderImages: string[] = [
+    '/info-offers-image.jpeg',
+    '/offers-image.jpeg',
+    '/img-1.jpg',
+  ];
 
   return (
     <section id="about" className="py-20 bg-white scroll-mt-20">
@@ -31,13 +38,33 @@ export default function About() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Image/Visual Side */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] outline outline-offset-4 outline-orange-100">
-              <img
+            <div className="relative z-10  rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] outline outline-offset-4 outline-orange-100">
+              <Swiper
+                modules={[Autoplay, EffectFade, Pagination]}
+                effect="fade"
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                loop={true}
+                pagination={{ clickable: true, dynamicBullets: true }}
+                className="w-full h-full bg-[#F8A21D]"
+              >
+                {sliderImages.map((img, idx) => (
+                  <SwiperSlide key={idx} className="bg-[#F8A21D]">
+                    <img
+                      // src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80"
+                      alt="Social Welfare"
+                      src={img}
+                      className="w-full h-full bg-transparent "
+                    />{' '}
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              {/* <img
                 // src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80"
                 alt="Social Welfare"
                 src="/img-1.jpg"
                 className="w-full h-full object-cover"
-              />
+              /> */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/50">

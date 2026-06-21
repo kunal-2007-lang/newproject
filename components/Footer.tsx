@@ -82,20 +82,14 @@ export default function Footer() {
           </h3>
           <ul className="space-y-4 text-sm font-medium">
             <li className="flex items-start gap-3">
-              <Phone
-                size={18}
-                className="text-orange-600 mt-0.5 flex-shrink-0"
-              />
+              <Phone size={18} className="text-orange-600 mt-0.5 shrink-0" />
               <div className="flex flex-col gap-1 text-gray-400 hover:text-gray-300 transition-colors">
                 <span>+91 9528845669, 8930180065</span>
                 <span>9050516834, 9996199089</span>
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin
-                size={18}
-                className="text-orange-600 mt-0.5 flex-shrink-0"
-              />
+              <MapPin size={18} className="text-orange-600 mt-0.5 shrink-0" />
               <span className="text-gray-400 leading-relaxed hover:text-gray-300 transition-colors">
                 Head Office, Muzaffarnagar
                 <br />

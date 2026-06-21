@@ -3,24 +3,21 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
 
 const sliderImages = [
-  'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80', // Car
-  'https://images.unsplash.com/photo-1592838064575-70ed626d3a15?auto=format&fit=crop&q=80', // Tractor
-  'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80', // Bike
-  'https://images.unsplash.com/photo-1629868417961-12f5581e263d?auto=format&fit=crop&q=80', // Scooter
-  'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80', // Laptop
-  'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80', // Gold Jewelry
+  '/img-1.jpg', // Car
+  // 'https://images.unsplash.com/photo-1592838064575-70ed626d3a15?auto=format&fit=crop&q=80', // Tractor
+  // 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80', // Bike
+  // 'https://images.unsplash.com/photo-1629868417961-12f5581e263d?auto=format&fit=crop&q=80', // Scooter
+  // 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&q=80', // Laptop
+  // 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80', // Gold Jewelry
 ];
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden"
+      className="relative h-[80vh] min-h-150 flex items-center justify-center overflow-hidden"
     >
       {/* Background Slider */}
       <div className="absolute inset-0 z-0">
@@ -39,7 +36,7 @@ export default function Hero() {
                 style={{ backgroundImage: `url(${img})` }}
               >
                 {/* Dark Overlay for better text readability */}
-                <div className="absolute inset-0 bg-black/60 bg-gradient-to-t from-gray-900/80 via-black/50 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-black/60 bg-linear-to-t from-gray-900/80 via-black/50 to-transparent pointer-events-none"></div>{' '}
               </div>
             </SwiperSlide>
           ))}
@@ -73,7 +70,7 @@ export default function Hero() {
         </h1>
 
         <h2 className="text-xl md:text-3xl text-gray-200 font-medium mb-10 italic drop-shadow-lg">
-          "अगर आप में दम है तो मौका देंगे हम"
+          &ldquo;अगर आप में दम है तो मौका देंगे हम&rdquo;
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto">
